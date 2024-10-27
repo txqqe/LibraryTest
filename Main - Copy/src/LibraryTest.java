@@ -27,11 +27,11 @@ class book{
         this.isbn = isbn;
     }
 }
+
 public class ebook extends book {
     double fileSizeMB;
     public ebook(String title, String author, String isbn, double fileSizeMB){
         super(title, author, isbn);
-        /////////////////////
         this.fileSizeMB = fileSizeMB;
     }
     public void displayInfo(){
@@ -46,7 +46,6 @@ public class AudioBook extends book {
    int durationMinutes; 
     public AudioBook(String title, String author, String isbn, int durationMinutes){
         super(title, author, isbn);
-        ////////////////////////
         this.durationMinutes = durationMinutes;
     }
     public void displayInfo(){
@@ -59,8 +58,19 @@ public class AudioBook extends book {
     
 }
 
-
-
+public class printedBook extends book {
+    int numPages;
+    public printedBook(String title, String author, String isbn, int numPages){
+        super(title, author, isbn);
+        this.numPages = numPages;
+    }
+    public void displayInfo(){
+        System.out.println(gettitle());
+        System.out.println(getauthor());
+        System.out.println(getisbn());
+        System.out.println(this.numPages);
+    }
+}
 
 
 
