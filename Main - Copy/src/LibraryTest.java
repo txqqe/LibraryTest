@@ -35,10 +35,10 @@ public class ebook extends book {
         this.fileSizeMB = fileSizeMB;
     }
     public void displayInfo(){
-        System.out.println("Title : "gettitle());
-        System.out.println("author : "getauthor());
-        System.out.println("isbn : "getisbn());
-         System.out.println("sizeFile : "this.fileSizeMB);
+        System.out.println("Title : "+gettitle());
+        System.out.println("author : "+getauthor());
+        System.out.println("isbn : "+getisbn());
+         System.out.println("sizeFile : "+this.fileSizeMB);
     }
 }
 
@@ -49,10 +49,10 @@ public class AudioBook extends book {
         this.durationMinutes = durationMinutes;
     }
     public void displayInfo(){
-        System.out.println("Title : "gettitle());
-        System.out.println("author : "getauthor());
-        System.out.println("isbn : "getisbn());
-        System.out.println("durationMinutes : "this.durationMinutes);
+        System.out.println("Title : "+gettitle());
+        System.out.println("author : "+getauthor());
+        System.out.println("isbn : "+getisbn());
+        System.out.println("durationMinutes : "+this.durationMinutes);
     }
 
     
@@ -65,10 +65,10 @@ public class printedBook extends book {
         this.numPages = numPages;
     }
     public void displayInfo(){
-        System.out.println("Title : "gettitle());
-        System.out.println("author : "getauthor());
-        System.out.println("isbn : "getisbn());
-        System.out.println("mupPages : "this.numPages);
+        System.out.println("Title : "+gettitle());
+        System.out.println("author : "+getauthor());
+        System.out.println("isbn : "+getisbn());
+        System.out.println("mupPages : "+this.numPages);
     }
 }
 
